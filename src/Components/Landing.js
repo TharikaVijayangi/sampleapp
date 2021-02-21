@@ -1,20 +1,31 @@
 import React, { Component } from 'react'
-import { Button,Jumbotron } from 'react-bootstrap';
+import { Button,Jumbotron,Container } from 'react-bootstrap';
+
+
 
 class Landing extends Component {
     render() {
         return (
             <div>
-                <Jumbotron>
-                    <h1>Hello, world!</h1>
+                <Container>
+                <Jumbotron className="jumbo">
+                    <h1>Hello, Reader!</h1>
                     <p>
-                        This is a simple hero unit, a simple jumbotron-style component for calling
-                        extra attention to featured content or information.
+                        <b>This is an independent book store,</b><br>
+                        </br>
+                        We strive to offer the same variety and richness of experence<br></br>
+                        as thebook of our shelves.<br></br>
                     </p>
                     <p>
-                        <Button variant="primary">Learn more</Button>
+                        Oppertunity to purches books, and oppertunity to add books to our store...
                     </p>
+                    <p>This is the place to promoting diverse perspectives,<br></br>
+                    And uploading the free exchange of ideas.
+                    </p>
+                    
                 </Jumbotron>
+                </Container>
+               
             </div>
         )
     }
